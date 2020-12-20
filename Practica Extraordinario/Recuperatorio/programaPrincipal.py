@@ -3,7 +3,7 @@ from claseProyecto import Proyecto
 from clasePersona import Persona
 import csv
 def item1(manejador):
-    archi = open('C:/Users/Braian/Desktop/Practica Extraordinario/Recuperatorio/proyectos.csv')
+    archi = open('proyectos.csv')
     reader =  csv.reader(archi, delimiter = ';')
     for li in reader:
 
@@ -15,7 +15,7 @@ def item1(manejador):
     archi.close()
 
 def item2(manejador):
-    archi = open('C:/Users/Braian/Desktop/Practica Extraordinario/Recuperatorio/integrantesProyecto.csv')
+    archi = open('integrantesProyecto.csv')
     reader =  csv.reader(archi, delimiter = ';')
     for li in reader:
         if(li[0] == 'idProyecto'):
